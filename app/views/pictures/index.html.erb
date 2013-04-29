@@ -1,0 +1,21 @@
+<h1>Portfolio</h1>
+<hr>
+
+  <div class="picture_container">
+    <% @pictures.each do |p| %>
+    <div class="picture_box box effect2">
+      <% if p.picture.url != nil %>
+        <%= link_to image_tag(p.picture.thumb), p.picture.url , :class => "fancybox" %>
+      <% elsif p.url != nil %>
+        <%= link_to image_tag(p.url), p.url , :class => 'fancybox' %>
+      <% end %>
+        <div class="picture_overlay">
+          <div class="pop_up">
+            <h2><%= p.title %></h2>
+            <p>branding</p>
+          </div>
+        </div>
+    </div>
+    <% end %>
+  </div>
+<br>

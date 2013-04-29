@@ -1,0 +1,130 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nixie One', sans-serif;
+}
+h1, h2 ,h3 ,h4, h5, h6 {
+  margin: .5em;
+  line-height: 1em;
+}
+header, footer {
+  padding: 70px;
+}
+nav ul {
+  text-align: right; 
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px 0 10px; 
+  border-left: 0 solid #28ACA5;
+  transition: border-left .3s;
+}
+nav ul li:hover{
+  border-left: 15px solid #28ACA5;
+}
+nav span {
+  background: black;
+  padding: 2px;
+}
+h3 span{
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  left: 300px;
+  height: 200px;
+}
+
+#background_color{
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+#content {
+  width: 75%;
+  margin: 0 auto;
+}
+.hero {
+  margin: 0 auto;
+  background: url('quilibleui.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 680px;
+}
+div.hero h1 {
+  padding: 100px;
+  padding-top: 160px; 
+}
+
+.picture_container {
+  width: 99%;
+  margin: 0 auto;
+}
+
+.picture_box {
+  position: relative;
+  width: 250px;
+  // height: 250px;
+  margin: 10px;
+  display: inline-block;
+  // border: 1px solid rgba(0,0,0,.1)
+}
+.picture_box img {
+  width: 250px;
+  // height: 250px;
+  background: #ccc;
+}
+
+.box p{
+  text-align:left;
+  position:relative;
+}
+a{
+  text-decoration: none;
+  color: #28ACA5;
+}
+
+.picture_overlay {
+  background-color:#000;
+  border-top: 2px solid #28ACA5;
+  bottom: 0px;
+  color: #fff; 
+  opacity:0;
+  position:absolute;
+  width:100%;
+  z-index:1000;
+}
+.picture_box:hover .picture_overlay{
+  opacity:.8;
+  transition:opacity 0.25s;
+  -moz-transition:opacity 0.25s;
+  -webkit-transition:opacity 0.25s;
+}
+.pop_up {
+  width: 95%;
+  margin: 0 auto;
+}
+.pop_up h2 {
+  color: #28ACA5;
+}
+
+.pop_up p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  position: relative;
+  bottom: 10px;
+  left: 13px
+}
+
+

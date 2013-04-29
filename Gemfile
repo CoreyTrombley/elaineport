@@ -17,7 +17,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'fancybox2-rails'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'devise'
 gem 'pg'
+gem 'thin'
+gem 'rmagick'
+gem 'activeadmin'
+gem 'meta_search'

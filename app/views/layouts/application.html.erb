@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Elaineport</title>
+  <title>Elaine Styles</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body style="background: #555;">
+  <div id="background_color">
+    <div id="content">
+      <header>
+        <%= image_tag "ES LOGOsm.png", :class => "logo", :alt => "Elaine Styles Logo" %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <nav>
+          <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <!-- <li><%= link_to "About", home_about_path %></li> -->
+            <li><%= link_to "Portfolio", pictures_path %></li>
+            <!-- <li><%= link_to "Blog", posts_path %></li> -->
+          </ul>
+        </nav>
+      </header>
+      <hr>
+      <%= yield %>
+      <hr>
+      <footer>
+        <nav>
+          <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <!-- <li><%= link_to "About", home_about_path %></li> -->
+            <li><%= link_to "Portfolio", pictures_path %></li>
+            <!-- <li><%= link_to "Blog", posts_path %></li> -->
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
