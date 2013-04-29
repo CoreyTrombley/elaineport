@@ -26,3 +26,6 @@ gem 'thin'
 gem 'rmagick'
 gem 'activeadmin'
 gem 'meta_search'
+gem "fog", "~> 1.3.1"
+gem 'aws-sdk'
+gem 'newrelic_rpm'
