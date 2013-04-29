@@ -68,5 +68,14 @@ Elaineport::Application.configure do
 
 
 
-  config.action_mailer.default_url_options = {:host => 'elaineport.herokuapp.com'}
+  # config.action_mailer.default_url_options = {:host => 'elaineport.herokuapp.com'}
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "app15378509@heroku.com",
+    :password  => "ECVEN67M9D4q5cd1Wtyudg", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'elainestyles.com', # your domain to identify your server when connecting
+  }
 end

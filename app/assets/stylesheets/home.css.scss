@@ -21,11 +21,11 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 0 10px 0 10px; 
-  border-left: 0 solid #28ACA5;
+  border-left: 0 solid #118988;
   transition: border-left .3s;
 }
 nav ul li:hover{
-  border-left: 15px solid #28ACA5;
+  border-left: 15px solid #118988;
 }
 nav span {
   background: black;
@@ -92,12 +92,12 @@ div.hero h1 {
 }
 a{
   text-decoration: none;
-  color: #28ACA5;
+  color: #ccc;
 }
 
 .picture_overlay {
   background-color:#000;
-  border-top: 2px solid #28ACA5;
+  border-top: 2px solid #118988;
   bottom: 0px;
   color: #fff; 
   opacity:0;
@@ -116,7 +116,7 @@ a{
   margin: 0 auto;
 }
 .pop_up h2 {
-  color: #28ACA5;
+  color: #118988;
 }
 
 .pop_up p {
