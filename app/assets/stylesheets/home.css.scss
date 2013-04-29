@@ -13,10 +13,10 @@ h1, h2 ,h3 ,h4, h5, h6 {
   line-height: 1em;
 }
 header {
-  padding:110px 0 10px 0;
+  padding: 120px 0 10px 0;
 }
 footer {
-
+  padding: 10px 0 10px 0;
 }
 nav ul {
   text-align: right;
@@ -41,8 +41,8 @@ h3 span{
 
 .logo {
   position: absolute;
-  top: -50px;
-  left: 20%;
+  top: -30px;
+  left: 16%;
   height: 200px;
 }
 
@@ -142,4 +142,39 @@ a:hover {
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
+h1 {
+  color: #555;
+}
+.hr_thin {
+  border-top: 0.5px solid rgba(0,0,0,1)
+}
+.social_media {
+  width: 80px;
+  height: 40px;
+  margin-top: 5px; 
+  margin-left: auto;
+  div {
+    display: inline-block;
+  }
+}
+.twitter {
+  background: url('sm_icon.png') no-repeat -3px -48px;
+  width: 37px;
+  height: 37px;
+}
+.twitter:hover {
+  background: url('sm_icon.png') no-repeat -3px -3px;
+  width: 37px;
+  height: 37px;
+}
 
+.linkedin {
+  background: url('sm_icon.png') no-repeat -48px -48px;
+  width: 37px;
+  height: 37px;
+}
+.linkedin:hover {
+  background: url('sm_icon.png') no-repeat -48px -3px;
+  width: 37px;
+  height: 37px;
+}
