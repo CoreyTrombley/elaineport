@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -47,7 +56,8 @@ h3 span{
 
 #background_color{
   background: white;
-  width: 1200px;
+  width: 80%;
+  overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
@@ -77,6 +87,7 @@ div.hero h1 {
 
 .picture_box {
   position: relative;
+  float: left;
   width: 250px;
   // height: 250px;
   margin: 10px;
@@ -96,7 +107,6 @@ a{
   text-decoration: none;
   color: #555;
   font-size: 19px;
-
 }
 a:hover {
   color: #118988;

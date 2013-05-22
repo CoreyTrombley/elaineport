@@ -1,9 +1,9 @@
 <h2>Portfolio</h2>
 <hr class="hr_thin">
 
-  <div class="picture_container">
+  <div class="picture_container clearfix">
     <% @pictures.each do |p| %>
-    <div class="picture_box box effect2">
+    <div class="picture_box box effect2 ">
       <% if p.picture.url != nil %>
         <%= link_to image_tag(p.picture.thumb), p.picture.url , :class => "fancybox" %>
       <% elsif p.url != nil %>
