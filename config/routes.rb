@@ -6,7 +6,7 @@ Elaineport::Application.routes.draw do
   get "home/index"
   get "home/about"
 
-  resources :posts do
+  resources(:posts, :except => :edit) do
     resources :comments
   end
 
