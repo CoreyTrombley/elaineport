@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-  <a href="https://twitter.com/share" class="twitter-share-button" data-text=<%= @post.tweet_text %> data-via="bly_360" data-size="large" data-hashtags=<%= @post.hash_tags %>>Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://elainestyles.com/posts" data-text="<%= @post.tweet_message %>" data-via="bly_360" data-size="large" data-hashtags="<%= @post.hash_tag %>">Tweet</a>
   <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   </script>

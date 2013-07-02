@@ -5,7 +5,9 @@ ActiveAdmin.register Post do
     attributes_table do
       row :title
       row :content
-      row :comments do
+      row :tweet_message
+      row :hash_tag
+      row 'Comments' do |post|
         post.comments.each do |comment|
           span comment.body
           span ".... Post by " + comment.commenter
@@ -13,11 +15,5 @@ ActiveAdmin.register Post do
         end
       end
     end
-    active_admin_comments
-  end
-  member_action :comments do
-    @post = Post.find(params[:id])
-
-    # This will render app/views/admin/posts/comments.html.erb
   end
 end
