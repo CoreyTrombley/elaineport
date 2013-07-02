@@ -18,13 +18,13 @@ group :assets do
 end
 
 gem 'fancybox2-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 gem 'carrierwave'
 gem 'devise'
 gem 'pg'
 gem 'thin'
 gem 'rmagick'
-gem 'activeadmin'
+gem 'activeadmin', '~> 0.5.1'
 gem 'meta_search'
 gem "fog", "~> 1.3.1"
 gem 'aws-sdk'
